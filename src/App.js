@@ -9,7 +9,6 @@ function App() {
 
   function detailView(data) {
     setDetailStatus(data);
-    console.log(detailStatus);
   }
 
   function onClose() {
