@@ -17,14 +17,38 @@ export default function SeamansDetail({ onClose }) {
         <h1 className="text-xl font-bold">이력</h1>
         <div className="flex flex-col items-start border-b mb-2 pb-2">
           <h1 className="font-semibold">2024/01 ~</h1>
-          <span>- 씨멘스클럽 뉴스페이지 제작</span>
+          <div>
+            <span>- 씨멘스클럽 뉴스페이지 제작 (반응형)</span>
+            <span
+              onClick={() => {
+                window.open(
+                  "https://www.seamansclub.com/seamansclub-news/",
+                  "_blank"
+                );
+              }}
+              className="ml-2 text-sky-500 hover:text-sky-600 cursor-pointer"
+            >
+              바로가기
+            </span>
+          </div>
+
           <span className="flex">
             <CheckCircle /> React
           </span>
         </div>
         <div className="flex flex-col items-start border-b mb-2 pb-2">
           <h1 className="font-semibold">2024/02 ~ Ing</h1>
-          <span className="">- 씨멘스클럽 홈페이지 리뉴얼</span>
+          <div>
+            <span className="">- 씨멘스클럽 홈페이지 리뉴얼 (반응형)</span>
+            <span
+              onClick={() => {
+                window.open("https://main.seamansclub.site/", "_blank");
+              }}
+              className="ml-2 text-sky-500 hover:text-sky-600 cursor-pointer"
+            >
+              바로가기
+            </span>
+          </div>
           <span className="flex">
             <CheckCircle /> Next, React
           </span>

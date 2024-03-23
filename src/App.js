@@ -7,6 +7,24 @@ import SeamansDetail from "./components/SeamansClub";
 function App() {
   const [detailStatus, setDetailStatus] = useState(0);
 
+  const row1 = [
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/7ae42bac3b34999c0db3.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/b2bd91d7b87b2181ca45.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6591cdc0702b32310306.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/3b7d9f4b073deb6a9b74.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/3cd767dea94a85078ca4.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/a2b3c3709ffedce2a22a.png",
+  ];
+
+  const row2 = [
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/9dd55e54b5a28658bf4e.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/0384060dcbf73b6a707c.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/35e044b3354aaa0caed5.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/f50ae7cbf6cc805bdadc.png",
+    "https://assets.algoexpert.io/spas/main/prod/g523bdeb478-prod/dist/images/6c585c33ca6c71c79bb7.png",
+  ];
+
   function detailView(data) {
     setDetailStatus(data);
   }
@@ -16,17 +34,47 @@ function App() {
   }
 
   return (
-    <div className="w-full h-[100vh] relative z-0">
+    <div className="w-full h-[100vh] relative z-0 ">
       {detailStatus === 1 && <SchoolDetail onClose={onClose} />}
       {detailStatus === 2 && <DoubleDetail onClose={onClose} />}
       {detailStatus === 3 && <SeamansDetail onClose={onClose} />}
       <Header />
-      <div className=" mx-auto relative max-w-2xl">
-        <div className="">
-          윤다온 (Yoon Daon, Ben)
+
+      <div className=" mx-auto max-w-2xl">
+        <div className="flex w-full select-none overflow-hidden gradient-mask-r-30">
+          <div className="flex-shrink-0 flex items-center justify-around whitespace-normal w-full animate-toLeft ">
+            {row1.map((item, index) => (
+              <div className="grid place-items-center w-full">
+                <img
+                  className="object-contain w-full h-full rounded-lg aspect-[16/9] py-[5px] px-5"
+                  key={index}
+                  src={item}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="flex w-full select-none overflow-hidden gradient-mask-r-30">
+          <div className="flex-shrink-0 flex items-center justify-around whitespace-normal w-full animate-toRignt ">
+            {row2.map((item, index) => (
+              <div className="grid place-items-center w-full">
+                <img
+                  className="object-contain w-full h-full rounded-lg aspect-[16/9] py-[5px] px-5"
+                  key={index}
+                  src={item}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="relative">
+          <span className="text-gray-500 font-semibold ">
+            {" "}
+            윤다온 (Yoon Daon, Ben)
+          </span>
           <span className="bg-[#40A2E3] w-[4px] h-6 block absolute top-0 left-[-8px]"></span>
-          <span className="absolute right-0 block text-slate-500 text-sm">
-            Last Updated, 2024.02.04
+          <span className="font-semibold absolute right-0 block text-slate-500 text-sm">
+            Last Updated, 2024.03.23
           </span>
         </div>
         <div className="mt-10 flex justify-start items-center border-b-2 pb-8">

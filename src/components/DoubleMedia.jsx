@@ -15,12 +15,24 @@ export default function DoubleDetail({ onClose }) {
       </div>
       <div className="text-gray-700">
         <h1 className="text-xl font-bold">이력</h1>
+
         <div className="flex flex-col items-start border-b mb-2 pb-2">
-          <h1 className="font-semibold">2022/10 ~</h1>
-          <span>- 팬더티비 플랫폼 프론트엔드 유지보수</span>
+          <div>
+            <span>- 팬더티비 플랫폼 프론트엔드 유지보수</span>
+            <span
+              onClick={() => {
+                window.open("https://www.pandalive.co.kr/live", "_blank");
+              }}
+              className="ml-2 text-sky-500 hover:text-sky-600 cursor-pointer"
+            >
+              바로가기
+            </span>
+          </div>
           <span className="flex">
             <CheckCircle /> Vue2, Nuxt2
           </span>
+
+          <h1 className="font-semibold">2022/10 ~</h1>
         </div>
         <div className="flex flex-col items-start border-b mb-2 pb-2">
           <h1 className="font-semibold">2022/12 ~</h1>
