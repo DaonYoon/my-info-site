@@ -19,38 +19,19 @@ export default function SeamansDetail({ onClose }) {
           <h1 className="font-semibold">2024/01 ~</h1>
           <div>
             <span>- 씨멘스클럽 뉴스페이지 제작 (반응형)</span>
-            <span
-              onClick={() => {
-                window.open(
-                  "https://www.seamansclub.com/seamansclub-news/",
-                  "_blank"
-                );
-              }}
-              className="ml-2 text-sky-500 hover:text-sky-600 cursor-pointer"
-            >
-              바로가기
-            </span>
           </div>
 
           <span className="flex">
-            <CheckCircle /> React
+            <CheckCircle /> React18
           </span>
         </div>
         <div className="flex flex-col items-start border-b mb-2 pb-2">
           <h1 className="font-semibold">2024/02 ~ Ing</h1>
           <div>
-            <span className="">- 씨멘스클럽 홈페이지 리뉴얼 (반응형)</span>
-            <span
-              onClick={() => {
-                window.open("https://main.seamansclub.site/", "_blank");
-              }}
-              className="ml-2 text-sky-500 hover:text-sky-600 cursor-pointer"
-            >
-              바로가기
-            </span>
+            <span className="">- 씨멘스클럽 홈페이지 리뉴얼</span>
           </div>
           <span className="flex">
-            <CheckCircle /> Next, React
+            <CheckCircle /> Next14, React18, React-Query, Tailwind CSS (반응형)
           </span>
           <span className="">- 씨멘스클럽 홈페이지 배포</span>
           <span className="flex">
@@ -58,7 +39,7 @@ export default function SeamansDetail({ onClose }) {
           </span>
           <span className="">- 씨멘스클럽 홈페이지 배포 자동화 ( CICD )</span>
           <span className="flex">
-            <CheckCircle /> GitHub Actions
+            <CheckCircle /> GitHub Actions, Linux
           </span>
         </div>
       </div>
