@@ -3,7 +3,7 @@ import CheckCircle from "./CheckCircle";
 
 export default function SeamansDetail({ onClose }) {
   return (
-    <div className="w-[500px] p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md bg-white z-10 rounded-lg">
+    <div className="w-[500px] p-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-md bg-white z-10 rounded-lg ">
       <div className="flex justify-between border-b items-center pb-2">
         <span className="font-semibold">(주)씨멘스클럽 상세 페이지</span>
         <button
