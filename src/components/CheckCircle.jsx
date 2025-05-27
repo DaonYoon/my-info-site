@@ -6,7 +6,7 @@ export default function CheckCircle() {
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
-      className="w-5 h-5 mr-2 text-sky-500"
+      className="min-w-5 h-5 mr-2 text-sky-500"
     >
       <path
         strokeLinecap="round"

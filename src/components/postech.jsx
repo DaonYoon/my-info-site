@@ -42,9 +42,9 @@ export default function PostechDetail({ onClose }) {
           <span className="flex">
             <CheckCircle /> React18, React-Query, Tailwind CSS, Electron (자동업데이트)
           </span>
-          <span className="font-semibold">- 완도 해양치유센터 입장프로그램</span>
+          <span className="font-semibold">- 완도 해양치유센터 입장프로그램 알고리즘 구축</span>
           <span className="flex">
-            <CheckCircle /> 치유방에 입장하면 사용자가 몸에있는 태그 자동인식하는 시스템 구축 (자세한 설명은 이메일 부탁드립니다.)
+            <CheckCircle /> 치유방에 입장하면 RFID리더기를 통해 사용자 몸에있는 태그 자동인식하는 하이패스 시스템 구축
           </span>
           <span className="font-semibold">- 배포 자동화 ( CICD )</span>
           <span className="flex">

@@ -78,7 +78,7 @@ function App() {
           </span>
           <span className="bg-[#40A2E3] w-[4px] h-6 block absolute top-0 left-[-8px]"></span>
           <span className="font-semibold absolute right-0 block text-slate-500 text-sm">
-            Last Updated, 2025.04.16
+            Last Updated, 2025.05.27
           </span>
         </div>
         <div className="mt-10 flex justify-start items-center border-b-2 pb-8">
@@ -139,6 +139,12 @@ function App() {
                 Flutter
               </span>
             </span>
+             <span className="font-semibold">
+              SERVER.
+              <span className="text-slate-500 text-sm border-b  ml-[30px]">
+                S3 | Nginx | Docker GitHub Actions(CI/CD) | GCP
+              </span>
+            </span>
           </div>
         </div>
         <div className="pt-8 border-b-2 pb-8">
@@ -146,7 +152,7 @@ function App() {
           <div className="flex justify-start mt-4">
             <div className="flex flex-col mr-8 font-semibold ">
          
-            <span>앱출시</span>
+            <span>개인프로젝트</span>
               <span>2020/03 ~ 2022/02</span>
               <span>2022/10 ~ 2023/11 </span>
               <span>2024/01 ~ 2025/01. </span>
