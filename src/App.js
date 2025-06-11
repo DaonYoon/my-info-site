@@ -101,7 +101,9 @@ function App() {
             </span>
             <span className="font-semibold">
               github.{" "}
-              <span className="text-slate-500 text-sm border-b  ml-8">
+              <span onClick={() => {
+                window.open("https://github.com/DaonYoon", "_blank");
+              }} className="text-slate-500 text-sm border-b  ml-8 cursor-pointer hover:text-[#40A2E3]">
                 https://github.com/DaonYoon
               </span>
             </span>
@@ -139,9 +141,9 @@ function App() {
                 Flutter
               </span>
             </span>
-             <span className="font-semibold">
-              SERVER.
-              <span className="text-slate-500 text-sm border-b  ml-[30px]">
+            <span className="font-semibold">
+              Server.
+              <span className="text-slate-500 text-sm border-b  ml-[40px]">
                 S3 | Nginx | Docker GitHub Actions(CI/CD) | GCP
               </span>
             </span>
@@ -151,15 +153,15 @@ function App() {
           <span className="text-xl font-semibold text-[#40A2E3]">Record.</span>
           <div className="flex justify-start mt-4">
             <div className="flex flex-col mr-8 font-semibold ">
-         
-            <span>개인프로젝트</span>
+
+              <span>개인프로젝트</span>
               <span>2020/03 ~ 2022/02</span>
               <span>2022/10 ~ 2023/11 </span>
               <span>2024/01 ~ 2025/01. </span>
               <span>2025/01 ~ ing. </span>
             </div>
             <div className="flex flex-col text-slate-500">
-            <span onClick={() => detailView("opmt")}>
+              <span onClick={() => detailView("opmt")}>
                 오픈매트
               </span>
               <span onClick={() => detailView(1)}>
@@ -170,7 +172,7 @@ function App() {
               <span onClick={() => detailView(4)}>(주) 포스텍 근무 (대리) </span>
             </div>
             <div className="flex flex-col text-slate-500 ml-16">
-            <span
+              <span
                 className="hover:text-[#40A2E3] cursor-pointer"
                 onClick={() => detailView("opmt")}
               >
